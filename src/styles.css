@@ -1,0 +1,14 @@
+/* Exactly how our app loads Kumo's CSS: the standalone bundle @imported from an app stylesheet
+   that Vite processes. */
+@import "@cloudflare/kumo/styles/standalone";
+
+body { margin: 0; background: var(--color-kumo-base); }
+
+.topbar {
+  position: sticky; top: 0; z-index: 20;
+  display: flex; align-items: center; gap: 18px;
+  min-height: 53px;
+  padding: 8px 16px;
+  background: var(--color-kumo-elevated);
+  border-bottom: 1px solid var(--color-kumo-line);
+}
